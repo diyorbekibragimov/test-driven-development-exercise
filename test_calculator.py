@@ -18,4 +18,21 @@ def test_basic_add():
     """
         Tests addition. This test is written for you, extend it and add others! 
     """
-    assert add("5,2") == "7", "Failed on 5+2==7"
+    assert add("5,2") == "7"
+    assert add("10,10") == "20"
+    assert add("100,222") == "322"
+    assert add("") == "0"
+    assert add(",1") == "1"
+    assert add("1000000,1111") == "1001111"
+    assert add("1.1,1") == "2.1"
+    assert add("3.5,100.5") == "104.0"
+    assert add("0,10.5") == "10.5"
+    assert add("105.11,2.11") == "107.22"
+
+def test_many_add():
+
+
+def test_float_add():
+
+
+def test_negative_add():
