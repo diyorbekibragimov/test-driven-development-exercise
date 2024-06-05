@@ -31,17 +31,20 @@ Example:
     '3'
 """
 def add(s: str) -> str:
-    sum = 0
-    if (s == ""):
-        return "0"
-    s = s.replace('\n', ',')
-    L = s.split(",")
-    for i in range(len(L)):
-        if "." in L[i]:
-            sum += float(L[i])
-        else:
-            sum += int(L[i])
-    return str(sum)
+  if (s[-1] == ',' or s[-1] == '\n'){
+    return 'Number expected but EOF found.'
+  }
+  sum = 0
+  if (s == ""):
+    return "0"
+  s = s.replace('\n', ',')
+  L = s.split(",")
+  for i in range(len(L)):
+      if "." in L[i]:
+          sum += float(L[i])
+      else:
+          sum += int(L[i])
+  return str(sum)
 
 
     
