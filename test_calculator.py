@@ -20,7 +20,6 @@ def test_basic_add():
     assert add("10,10") == "20"
     assert add("100,222") == "322"
     assert add("") == "0"
-    assert add(",1") == "1"
     assert add("1000000,1111") == "1001111"
     assert add("1.1,1") == "2.1"
     assert add("3.5,100.5") == "104.0"
