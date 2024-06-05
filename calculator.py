@@ -33,7 +33,7 @@ Example:
 def add(s: str) -> str:
     sum = 0
     if (s == ""):
-        return 0
+        return "0"
     L = s.split(",")
     for i in range(2):
         if "." in L[i]:
