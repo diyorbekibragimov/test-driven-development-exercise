@@ -28,4 +28,4 @@ def test_a_lot_add():
     assert add("1.9,2.1,1") == "5.0", "failed on 1.9,2.1,1 == 5"
     assert add("3500,2,3,4")  == "3509", "failed on 3500+2+3+4 == 3509"
     assert add("1,0,2,3,4") == "10", "failed on 1+0+2+3+4 == 10"
-    assert add("3,4,")
+    assert add("3,4,6,7") == "20","failed"
