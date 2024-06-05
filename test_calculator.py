@@ -12,8 +12,6 @@ Test Module for String Calculator
 import pytest
 from calculator import add
 
-
-=======
 def test_basic_add():
     """
         Tests addition. This test is written for you, extend it and add others! 
