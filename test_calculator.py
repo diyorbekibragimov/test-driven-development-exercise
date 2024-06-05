@@ -27,6 +27,9 @@ def test_newline_as_separator():
     assert add("0.5,0.5,0.5") == "1.5", "Failed on 0.5+0.5+0.5==1.5"
     assert add("1.23,4.56,7.89") == "13.68", "Failed on 1.23+4.56+7.89==13.68"
     assert add("1.23\n4.56\n7.89") == "13.68", "Failed on 1.23+4.56+7.89==13.68"
+    assert add("175.2,\n35") == "Number expected but '\n' found at position 6."
+    assert add(",56,20,5") == "Number expected but ',' found at position 0."
+    assert add("56,20\n,5") == "Number expected but ',' found at position 7."
         
 
 # def test_basic_add():
