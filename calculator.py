@@ -34,6 +34,7 @@ def add(s: str) -> str:
     sum = 0
     if (s == ""):
         return "0"
+    s = s.replace('\n', ',')
     L = s.split(",")
     for i in range(len(L)):
         if "." in L[i]:
