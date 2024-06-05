@@ -13,7 +13,7 @@ import pytest
 from calculator import add
 
 
-
+=======
 def test_basic_add():
     """
         Tests addition. This test is written for you, extend it and add others! 
@@ -28,11 +28,3 @@ def test_basic_add():
     assert add("3.5,100.5") == "104.0"
     assert add("0,10.5") == "10.5"
     assert add("105.11,2.11") == "107.22"
-
-def test_many_add():
-
-
-def test_float_add():
-
-
-def test_negative_add():

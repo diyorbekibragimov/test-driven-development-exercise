@@ -31,6 +31,17 @@ Example:
     '3'
 """
 def add(s: str) -> str:
+    sum = 0
+    L = s.split(",")
+    for i in range(2):
+        if "." in L[i]:
+            sum += float(L[i])
+        else:
+            sum += int(L[i])
+    return str(sum)
+
+
+    
     """
     Adds numbers in a given string.
 
