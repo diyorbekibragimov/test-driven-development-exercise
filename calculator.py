@@ -56,4 +56,16 @@ def add(s: str) -> str:
         '6'
         >>>
     """
-    return "7"  # TODO: Implement the function logic.
+    
+    new = s.replace("\n", ",")
+    new = new.split(",")
+    sum = 0
+    for i in new:
+        if i == "":
+            continue
+        if "." in i:
+            sum += float(i)
+        else:
+            sum += int(i)
+    return str(sum)
+    
