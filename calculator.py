@@ -35,7 +35,7 @@ def add(s: str) -> str:
     if (s == ""):
         return "0"
     L = s.split(",")
-    for i in range(2):
+    for i in range(len(L)):
         if "." in L[i]:
             sum += float(L[i])
         else:
