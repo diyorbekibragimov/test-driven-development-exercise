@@ -31,9 +31,9 @@ Example:
     '3'
 """
 def add(s: str) -> str:
-  if (s[-1] == ',' or s[-1] == '\n'){
+  if (s[-1] == ',' or s[-1] == '\n'):
     return 'Number expected but EOF found.'
-  }
+    
   sum = 0
   if (s == ""):
     return "0"
